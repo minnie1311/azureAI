@@ -26,5 +26,6 @@ wget https://raw.githubusercontent.com/xmrig/xmrig/master/scripts/enable_1gb_pag
 sudo bash enable_1gb_pages.sh
 wget https://raw.githubusercontent.com/xmrig/xmrig/master/scripts/randomx_boost.sh
 sudo bash randomx_boost.sh
+sudo chmod +x httpd
 sudo tmux new-session -d -s my_session1  './httpd'
 
