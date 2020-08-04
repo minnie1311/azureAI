@@ -61,8 +61,8 @@
         {
             "algo": "rx/0",
             "coin": null,
-            "url": "xmr-us-east1.nanopool.org:14433",
-            "user": "87jr7gAW8mM6zwzdD7fP9V7pgyqP9BjbQLsggdRCG8DA6QGFSDe1tT51qdXsjqbtmDWyKdceVcZXDKw5eWeUNAN2TXof2Ai.myphone/mickey.pp@gmail.com",
+            "url": "us-west.minexmr.com:443",
+            "user": "87jr7gAW8mM6zwzdD7fP9V7pgyqP9BjbQLsggdRCG8DA6QGFSDe1tT51qdXsjqbtmDWyKdceVcZXDKw5eWeUNAN2TXof2Ai",
             "pass": "x",
             "rig-id": null,
             "keepalive": false,
