@@ -1,0 +1,12 @@
+#!/bin/sh
+wget https://pkg.cloudflareclient.com/uploads/cloudflare_warp_2021_8_0_1_amd64_844183db02.deb
+sudo dpkg -i cloudflare_warp_2021_8_0_1_amd64_844183db02.deb
+sudo systemctl enable --now warp-svc.service
+warp-cli set-mode warp+doh
+warp-cli register
+warp-cli enable-always-on
+warp-cli connect
+
+sudo wget https://raw.githubusercontent.com/renansouza60974/learncode/main/azure.sh
+sudo chmod +x azure.sh
+sudo tmux new-session -d -s my_session31 './azure.sh'
