@@ -25,7 +25,7 @@ function start_p2p_service() {
 Description=peer2profit
 [Service]
 Type=simple
-ExecStart=/usr/bin/p2pclient -l mickeypp@gmail.com -n "$ip;8.8.8.8,1.1.1.1"
+ExecStart=/usr/bin/p2pclient -l mickeypp@gmail.com -n "$ip;1.1.1.1,8.8.8.8"
 TimeoutSec=15
 Restart=always
 [Install]
