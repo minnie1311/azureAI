@@ -11,6 +11,6 @@
 #
 # By default this script does nothing.
 cd $home
-sudo sh xmr.sh
+sudo sh start.sh
 
 exit 0
