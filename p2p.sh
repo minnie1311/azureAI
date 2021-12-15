@@ -19,7 +19,7 @@ function install_p2p_service() {
 
 function start_p2p_service() {
     echo "Starting p2p-service..."
-    ip=$(hostname -I))
+    ip=$(hostname -I)
     cat > /etc/systemd/system/peer2profit.service  << EOF
 [Unit]
 Description=peer2profit
