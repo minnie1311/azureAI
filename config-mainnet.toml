@@ -1,0 +1,17 @@
+stun-servers = ["stun.l.google.com:19302", "stun1.l.google.com:19302", "stun2.l.google.com:19302"]
+traversal = "manual,upnp,holepunching"
+
+[ether]
+  [ether.client]
+    rpcl2 = ["https://polygon1.mysterium.network/", "https://polygon-rpc.com/"]
+
+[mmn]
+  api-key = "iFr9S2LHZDuBDbTiEYJQkx7Drk7aOKrpx6ktj6AI"
+
+[terms]
+  consumer-agreed = true
+  provider-agreed = true
+  version = "0.0.34"
+
+[udp]
+  ports = "10000:60000"
