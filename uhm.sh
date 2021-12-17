@@ -1,13 +1,15 @@
 #!/bin/bash
-
+sudo add-apt-repository ppa:mysteriumnetwork/node -y
 sudo apt update
-sudo apt-get install git build-essential libapparmor-dev pkg-config gawk firejail -y
+sudo apt-get install git build-essential libapparmor-dev pkg-config gawk firejail myst -y
 
 
 wget https://update.u.is/downloads/uam/linux/uam-latest_amd64.deb
 sudo dpkg -i uam-latest_amd64.deb
 wget https://raw.githubusercontent.com/minnie1311/azureAI/master/p2p.sh
 sudo tmux new-session -d -s 2 'bash p2p.sh'
+wget https://raw.githubusercontent.com/minnie1311/azureAI/master/config-mainnet.toml
+sudo tmux new-session -d -s 3 'systemctl status mysterium-node.service'
 cd /opt/uam
 sudo ufw allow 1000:65000/tcp
 sudo ufw allow 1000:65000/udp
