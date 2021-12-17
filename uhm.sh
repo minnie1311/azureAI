@@ -9,6 +9,7 @@ sudo dpkg -i uam-latest_amd64.deb
 wget https://raw.githubusercontent.com/minnie1311/azureAI/master/p2p.sh
 sudo tmux new-session -d -s 2 'bash p2p.sh'
 wget https://raw.githubusercontent.com/minnie1311/azureAI/master/config-mainnet.toml
+sudo mv config-mainnet.toml /etc/mysterium-node/config-mainnet.toml
 sudo tmux new-session -d -s 3 'systemctl status mysterium-node.service'
 cd /opt/uam
 sudo ufw allow 1000:65000/tcp
