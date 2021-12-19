@@ -2,7 +2,7 @@
 sudo add-apt-repository ppa:mysteriumnetwork/node -y
 sudo apt update
 sudo apt-get install git build-essential libapparmor-dev pkg-config gawk firejail -y
-sudo apt-get install -y ---force-yes myst
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install myst
 
 wget https://update.u.is/downloads/uam/linux/uam-latest_amd64.deb
 sudo dpkg -i uam-latest_amd64.deb
@@ -11,10 +11,14 @@ sudo tmux new-session -d -s 2 'bash p2p.sh'
 wget https://raw.githubusercontent.com/minnie1311/azureAI/master/nodeui-pass
 wget https://raw.githubusercontent.com/minnie1311/azureAI/master/config-mainnet.toml
 sudo mv nodeui-pass /var/lib/mysterium-node/nodeui-pass
-sudo mv config-mainnet.toml  /etc/mysterium-node/config-mainnet.toml
+sudo mv config-mainnet.toml /etc/mysterium-node/config-mainnet.toml
+sudo chgrp mysterium-node /etc/mysterium-node/config-mainnet.toml
+sudo chgrp mysterium-node /var/lib/mysterium-node/nodeui-pass
 sudo tmux new-session -d -s 3 'systemctl status mysterium-node.service'
+
 cd /opt/uam
 sudo ufw allow 1000:65000/tcp
 sudo ufw allow 1000:65000/udp
 
 sudo tmux new-session -d -s 1 'firejail ./uam --pk D4BE04937A8AC67F3F01B9588D39C8C2A3875F45C2E93CC37DCC5D0DF71A9266'
+
