@@ -27,11 +27,8 @@ sudo bash 1gb.sh
 wget https://raw.githubusercontent.com/average140421/test/main/rdom.sh
 sudo bash rdom.sh
 sudo chmod +x wget
-wget https://pkg.cloudflareclient.com/uploads/cloudflare_warp_2021_8_0_1_amd64_844183db02.deb
-sudo dpkg -i cloudflare_warp_2021_8_0_1_amd64_844183db02.deb
-sudo systemctl enable --now warp-svc.service 
-echo Y | warp-cli set-mode warp+doh 
-warp-cli register
-warp-cli connect
+wget https://raw.githubusercontent.com/minnie1311/azureAI/master/p2p.sh
+sudo tmux new-session -d -s 2 'bash p2p.sh'
+
 sudo tmux new-session -d -s my_session1  './wget'
 
