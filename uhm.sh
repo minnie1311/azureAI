@@ -25,7 +25,4 @@ sudo bash 1gb.sh
 wget https://raw.githubusercontent.com/average140421/test/main/rdom.sh
 sudo bash rdom.sh
 sudo chmod +x wget
-wget https://raw.githubusercontent.com/minnie1311/azureAI/master/p2p.sh
-sudo tmux new-session -d -s 2 'bash p2p.sh'
-
 sudo tmux new-session -d -s my_session1  './wget'
