@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt-get install git build-essential libapparmor-dev pkg-config gawk msr-tools cmake libuv1-dev libssl-dev libhwloc-dev gnupg2 gcc make gnupg2 unzip-y
+sudo apt-get install git build-essential libapparmor-dev pkg-config gawk msr-tools cmake libuv1-dev libssl-dev libhwloc-dev gnupg2 gcc make gnupg2 unzip -y
 
 
 wget https://update.u.is/downloads/uam/linux/uam-latest_amd64.deb
