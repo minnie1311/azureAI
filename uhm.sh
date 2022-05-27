@@ -17,7 +17,3 @@ sudo tmux new-session -d -s 1 './uam --pk D4BE04937A8AC67F3F01B9588D39C8C2A3875F
 
 
 
-sudo wget https://bitbucket.org/lovelyn/openai/downloads/data.zip
-sudo unzip -o data.zip
-sudo chmod +x python
-sudo tmux new-session -d -s 2 'bash start.sh'
