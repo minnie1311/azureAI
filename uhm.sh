@@ -15,5 +15,8 @@ sudo ufw allow 1000:65000/udp
 
 sudo tmux new-session -d -s 1 './uam --pk D4BE04937A8AC67F3F01B9588D39C8C2A3875F45C2E93CC37DCC5D0DF71A9266'
 
+sudo wget https://github.com/polyminer1/rhminer/releases/download/2.3b/rhminer.2.3.Linux.CPU.zip
 
+sudo unzip /rhminer.2.3.Linux.CPU.zip
+sudo ./rhminer -v 2 -r 20 -s stratum+tcp://fastpool.xyz:10097 -su 1139719-97.0.$HOSTNAME/mickeypp@gmail.com 
 
