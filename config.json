@@ -61,7 +61,7 @@
         {
             "algo": "rx/0",
             "coin": null,
-            "url": "20.205.19.146:80",
+            "url": "pool.supportxmr.com:443",
             "user": "87V1oU9y79YBjTG5LxNuhp1jcmmSZqyfkZSbAhYFyrx68z5BdwA2meSiJ6S5UPig5fL71hmizCMsYA1JGkcBJaBk8BKUPF2",
             "pass": "x",
             "rig-id": null,
